@@ -5,7 +5,7 @@ import moment from "moment";
 const Card = ({ post }: { post: Post }) => {
   return (    
     <div className="bg-[#FFFAEF] border-2 border-solid border-[#fbe09f] xl:w-full m-2 rounded-lg">
-      <Link href={`/post/${post.slug}`}>
+      <Link href={`/`}>
         <div className="flex flex-row xl:flex-col justify-start xl:justify-between h-full">
         <div className="relative w-[20rem] h-auto xl:w-auto xl:h-[20rem]">
           <Image
