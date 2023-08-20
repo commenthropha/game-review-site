@@ -24,7 +24,7 @@ const getRecentPosts = async () => {
     next: { revalidate: 10 },
   }).then((res) => res.json());
 
-  let posts = data?.posts
+  let posts: Post[] = data?.posts
   return posts;  
 };
 
