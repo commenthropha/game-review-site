@@ -22,7 +22,7 @@ const data: { title: string; content: string }[] = [
 const About = () => {
   return (
     <div
-      className={`mt-20 border-8 border-double rounded-md border-red-950 border-solid m-2 p-8 sm:m-20 md:m-24 flex flex-col`}
+      className={`mt-20 border-8 border-double rounded-md border-red-900 border-solid m-2 p-8 sm:m-20 md:m-24 flex flex-col`}
     >
       <div className="m-3 flex flex-col md:flex-row justify-between md:items-center">
         <h3 className="text-red-800 min-w-[8rem] font-bold text-3xl">What Is Our Aim?</h3>
