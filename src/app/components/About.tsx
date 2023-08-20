@@ -3,7 +3,7 @@ import styles from "./styles/About.module.css"
 
 const About = () => {
   return (
-    <div>
+    <div className={`${styles.gradient}`}>
         About
     </div>
   )
