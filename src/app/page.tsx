@@ -5,6 +5,7 @@ export default function Home() {
     <div>
       <Hero />
       <About />
+      <Reviews />
     </div>
   )
 }
