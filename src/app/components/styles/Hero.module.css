@@ -1,5 +1,13 @@
 .main {
-    background-image: url(../hero.png);
-    background-size: cover; 
-    background-position: center; 
+  background-image: url(../hero.png);
+  background-size: cover;
+  background-position: left;
+  margin: 0 0;
 }
+
+.shadow {
+  -webkit-text-shadow:  3px 3px 30px #000000;
+  -moz-text-shadow:  3px 3px 30px #000000;
+  text-shadow: 3px 3px 30px #000000;
+}
+
