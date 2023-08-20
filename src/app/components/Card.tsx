@@ -7,7 +7,7 @@ const Card = ({ post }: { post: Post }) => {
     <div className="bg-[#FFFAEF] border-2 border-solid border-[#fbe09f] xl:w-full m-2 rounded-lg">
       <Link href={`/`}>
         <div className="flex flex-row xl:flex-col justify-start xl:justify-between h-full">
-        <div className="relative w-[20rem] h-auto xl:w-auto xl:h-[20rem]">
+        <div className="relative w-[8rem] sm:w-[12rem] md:w-[16rem] lg:w-[20rem] h-auto xl:w-auto xl:h-[20rem]">
           <Image
               alt={post.title}
               className="rounded-md"
