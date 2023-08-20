@@ -1,4 +1,4 @@
-import React from 'react'
+import { request, gql } from 'graphql-request';
 
 const Reviews = () => {
   return (
