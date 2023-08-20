@@ -10,8 +10,8 @@ const Reviews = async () => {
         Take A Look At Some Of Our <span style ={{wordSpacing: "-.5rem"}} className='tracking-tighter font-inconsolata text-red-800'>Recent Reviews</span>
       </h1>
       <div className='flex flex-col xl:flex-row'>
-        {posts?.map((post) => (
-          <Card key={post.id} post = {post}/>
+        {posts?.map((post, index) => (
+          <Card key={post.id} post = {post} reverse = {(index % 2 == 0) ? true : false}/>
         ))}
       </div>
     </div>
