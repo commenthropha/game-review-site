@@ -1,8 +1,6 @@
-import getRecentPosts from '../(queries)/getRecentPosts';
 import Card from './Card';
 
 const Reviews = async () => {
-  const posts = await getRecentPosts();
 
   return (
     <div className='bg-[#ffeec4] text-[#171520]'>
@@ -10,9 +8,7 @@ const Reviews = async () => {
         Take A Look At Some Of Our <span style ={{wordSpacing: "-20px"}} className='tracking-tighter font-inconsolata text-red-800'>Recent Reviews</span>
       </h1>
       <div className='flex flex-col xl:flex-row'>
-        {posts?.map((post) => (
-          <Card key={post.id} post = {post}/>
-        ))}
+
       </div>
     </div>
   );
