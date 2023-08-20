@@ -6,7 +6,7 @@ const Hero = () => {
     <div>
       <div
         id="hero"
-        className={`min-h-[800px] md:min-h-[900px] xl:min-h-[1000px] ${styles.main}`}
+        className={`min-h-[600px] md:min-h-[900px] ${styles.main}`}
       >
         <div className="pl-[50px] sm:pl-[100px] pt-[150px] md:pt-[200px] md:pl-[150px] lg:pt-[225px] lg:pl-[200px] xl:pl-[300px]">
           <h1
@@ -17,8 +17,8 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      <p className="text-slate-500 italic text-center text-bottom mx-12 text-xs md:text-sm">
-        Taken from Red Dead Redemption 2
+      <p className="text-slate-600 italic text-center text-bottom mt-4 mx-12 text-xs md:text-sm">
+        Red Dead Redemption 2
       </p>
     </div>
   );
