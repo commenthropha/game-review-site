@@ -17,7 +17,7 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      <p className="tracking-tighter font-inconsolata text-red-900 text-center text-bottom mt-4 mx-12 text-xs md:text-sm">
+      <p className="italic tracking-tighter font-inconsolata text-red-900 text-center text-bottom mt-4 mx-12 text-xs md:text-sm">
         Red Dead Redemption 2
       </p>
     </div>
