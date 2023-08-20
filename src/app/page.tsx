@@ -1,4 +1,4 @@
-import {Hero, About} from "./components"
+import {Hero, About, Reviews} from "./components"
 
 export default function Home() {
   return (
