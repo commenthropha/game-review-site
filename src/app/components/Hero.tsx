@@ -15,9 +15,9 @@ const Hero = () => {
           <br /> Reviewed
         </h1>
       </div>
-      <div className="text-slate-500 italic text-center text-bottom pt-72 xl:pt-[22rem] mx-12">
+      <p className="text-slate-500 italic text-center text-bottom pt-72 xl:pt-[22rem] mx-12">
         Taken from Red Dead Redemption 2
-      </div>
+      </p>
     </div>
   );
 };
