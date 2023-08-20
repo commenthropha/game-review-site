@@ -1,9 +1,13 @@
-import { request, gql } from 'graphql-request';
-
 const graphqlAPI: string = process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT ? process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT : "";
 
 const getRecentPosts = async () => {
-  const query = gql`
+  const { data } = await fetch(graphqlAPI, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `
     query getRecentPosts {
       posts(orderBy: publishedAt_ASC, last: 4) {
         title
@@ -15,11 +19,13 @@ const getRecentPosts = async () => {
         slug
       }
     }
-  `;
+  `,
+    }),
+    next: { revalidate: 10 },
+  }).then((res) => res.json());
 
-  const { posts }: { posts: Post[] } = await request(graphqlAPI, query);
-
-  return posts;
+  let posts = data?.posts
+  return posts;  
 };
 
 export default getRecentPosts;
