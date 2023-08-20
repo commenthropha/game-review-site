@@ -21,3 +21,5 @@ const getRecentPosts = async () => {
 
   return posts;
 };
+
+export default getRecentPosts;
