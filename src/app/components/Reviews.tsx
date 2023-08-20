@@ -2,7 +2,7 @@ import getRecentPosts from '../(queries)/getRecentPosts';
 import Card from './Card';
 
 const Reviews = async () => {
-  const posts = await getRecentPosts();
+  const posts: Post[] = await getRecentPosts();
 
   return (
     <div className='bg-[#ffeec4] text-[#171520]'>
