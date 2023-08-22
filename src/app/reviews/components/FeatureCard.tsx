@@ -6,7 +6,7 @@ const FeatureCard = ({ post }: { post: Post }) => {
   console.log(post.title);
   return (
     <div className="bg-honey md:ml-2 md:mb-6 rounded-md">
-      <Link href={`/`}>
+      <Link href={`/${post.slug}`}>
         <div className= "flex justify-between h-full flex-row-reverse">
         <div className="relative w-[10rem] sm:w-[14rem] md:w-[22rem] lg:w-[26rem] 2xl:h-[20rem]">
           <Image
