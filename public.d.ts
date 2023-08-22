@@ -6,6 +6,7 @@ declare type Post = {
     updatedBy: string,
     content: string,
     title: string,
+    subheading: string,
     featuredImage: {
         url: string
     },
