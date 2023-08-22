@@ -13,6 +13,7 @@
     flex-direction: column;
     line-height: 40px;
     border-bottom: 4px solid #760608;
+    z-index: 1;
   }
 
 .posts {
