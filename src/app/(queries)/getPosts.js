@@ -10,6 +10,7 @@ const getPosts = async () => {
       query getRecentPosts {
         posts(orderBy: publishedAt_ASC) {
           title
+          subheading
           id
           featuredImage {
             url
