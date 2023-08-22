@@ -13,7 +13,7 @@ const config: Config = {
       },
       colors : {
         "honey": "#FFEEC4",
-        "regal": "171520"
+        "regal": "#171520"
       },
     },
   },
