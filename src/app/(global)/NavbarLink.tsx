@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavbarLink = () => {
+const NavbarLink = ({text, href}: {text: string, href: string}) => {
   return (
     <div>NavbarLink</div>
   )
