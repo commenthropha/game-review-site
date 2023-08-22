@@ -15,7 +15,7 @@ const Reviews = async () => {
           Recent Reviews
         </span>
       </h1>
-      <div className="flex flex-col xl:flex-row">
+      <div className="flex flex-col 2xl:flex-row pb-20">
         {posts?.map((post, i) => (
           <Card key={post.id} post={post} reverse={i % 2 === 0} />
         ))}
