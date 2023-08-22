@@ -1,6 +1,6 @@
 import {Hero, About, Reviews} from "./components"
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Hero />
@@ -9,3 +9,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home;
