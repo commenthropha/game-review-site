@@ -1,1 +1,1 @@
-export { default as Navbar } from "../(global)/Navbar";
+export { default as NavbarClient } from "./NavbarClient";
