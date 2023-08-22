@@ -5,7 +5,14 @@ import { elastic as Menu } from 'react-burger-menu'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='flex justify-between'>
+      <div>
+        Logo
+      </div>
+      <div>
+        Menu
+      </div>
+    </div>
   )
 }
 
