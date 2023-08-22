@@ -1,6 +1,8 @@
+import NavbarClient from "./NavbarClient"
+
 const NavbarServer = () => {
   return (
-    <div>NavbarServer</div>
+    <NavbarClient />
   )
 }
 
