@@ -1,0 +1,14 @@
+.burgerMenu {
+    display: none;
+    background-color: #3d0d64;
+    color: white;
+    padding: 30px;
+    padding-top: 70px;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+  }
