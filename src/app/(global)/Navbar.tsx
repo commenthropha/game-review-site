@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Hamburger from "hamburger-react"
 // @ts-ignore
-import { elastic as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
