@@ -1,6 +1,8 @@
 const Reviews = () => {
   return (
-    <div>page</div>
+    <h1 className="p-6 md:p-16 lg:p-24 font-extrabold text-5xl md:text-6xl lg:text-7xl">
+      Reviews
+    </h1>
   )
 }
 
