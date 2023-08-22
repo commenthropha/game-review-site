@@ -1,9 +1,10 @@
-import NavbarClient from "./NavbarClient"
+import getRecentPosts from "../(queries)/getRecentPosts";
+import NavbarClient from "./NavbarClient";
 
-const NavbarServer = () => {
-  return (
-    <NavbarClient />
-  )
-}
+const NavbarServer = async () => {
+  const recenPosts: Post[] = await getRecentPosts();
 
-export default NavbarServer
+  return <NavbarClient />;
+};
+
+export default NavbarServer;
