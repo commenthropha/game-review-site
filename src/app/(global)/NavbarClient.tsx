@@ -44,8 +44,8 @@ const CalculateColors = (isOpen: boolean) => {
     color = isOpen ? "bg-[#FFEEC4]" : "bg-[#400404]";
     hamburger = isOpen ? "#171520" : "#FFEEC4";
   } else {
-    color = "white";
-    hamburger = "white";
+    color = isOpen ? "bg-[#FFEEC4]" : "bg-[#171520]";
+    hamburger = isOpen ? "#171520" : "#FFEEC4";
   }
 
   return { image, color, hamburger };
