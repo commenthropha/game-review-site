@@ -18,7 +18,7 @@ const BurgerMenu = ({
     {toggled ? (
       <div className={styles.burgerMenu}>
         <NavbarLink href="/" text="Home" />
-        <NavbarLink href="/reviews" text="Home" />
+        <NavbarLink href="/reviews" text="Reviews" />
         <div className={`${styles.posts}`}>
           {items.map((item: Post) => (
             <NavbarLink
