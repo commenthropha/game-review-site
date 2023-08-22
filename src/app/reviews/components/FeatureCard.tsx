@@ -4,13 +4,13 @@ import moment from "moment";
 
 const FeatureCard = ({ post }: { post: Post }) => {
   return (
-    <div className="bg-red-800 md:ml-2 md:mb-6 rounded-sm">
+    <div className="bg-red-900 md:ml-2 md:mb-6 rounded-md">
       <Link href={`/`}>
         <div className= "flex justify-between h-full flex-row-reverse">
         <div className="relative w-[10rem] sm:w-[14rem] md:w-[22rem] lg:w-[26rem] 2xl:h-[20rem]">
           <Image
               alt={post.title}
-              className="rounded-sm"
+              className="rounded-md"
               src={post.featuredImage.url}
               layout="fill" // Fill the parent dimensions
               objectFit="cover" // Make the image fill the container
