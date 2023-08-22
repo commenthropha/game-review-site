@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Hamburger from "hamburger-react"
+import styles from "./styles/Navbar.module.css";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
