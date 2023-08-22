@@ -7,13 +7,13 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors : {
-      "honey": "#FFEEC4",
-      "regal": "171520"
-    },
     extend: {
       fontFamily: {
         inconsolata: ['Inconsolata', 'monospace'], // 'monospace' as fallback
+      },
+      colors : {
+        "honey": "#FFEEC4",
+        "regal": "171520"
       },
     },
   },
