@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Hamburger from "hamburger-react"
 import styles from "./styles/Navbar.module.css";
 
-const NavbarClient = () => {
+const NavbarClient = ({posts}: {posts: Post[]}) => {
   const [isOpen, setOpen] = useState(false)
 
   return (
