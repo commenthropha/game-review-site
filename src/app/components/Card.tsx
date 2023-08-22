@@ -6,7 +6,7 @@ const Card = ({ post, reverse }: { post: Post, reverse: boolean }) => {
   
   return (    
     <div className="bg-[#FFFAEF] border-2 border-solid border-[#fbe09f] lg:w-full m-2 rounded-lg">
-      <Link href={`/`}>
+      <Link href={`/${post.slug}`}>
         <div className= {`flex ${reverse ? "flex-row-reverse" : "flex-row"} lg:flex-col justify-between h-full`}>
         <div className="relative w-[8rem] sm:w-[12rem] md:w-[20rem] lg:w-[24rem] lg:w-auto lg:h-[20rem]">
           <Image
