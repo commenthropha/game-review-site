@@ -2,10 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
-import { IoLogoGameControllerB } from "react-icons/io"
+import { IoLogoGameControllerB } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import styles from "./styles/Navbar.module.css";
-import Link from "next/link";
+import NavbarLink from "./NavbarLink";
 
 const BurgerMenu = ({
   toggled, // Determines the current state of the menu
@@ -17,27 +17,15 @@ const BurgerMenu = ({
   <>
     {toggled ? (
       <div className={styles.burgerMenu}>
-        <Link
-          href= ""
-          className="has-text-weight-semibold has-text-white"
-        >
-          Home
-        </Link>
-        <Link
-          href= ""
-          className="has-text-weight-semibold has-text-white"
-        >
-          Reviews
-        </Link>
+        <NavbarLink href="/" text="Home" />
+        <NavbarLink href="/reviews" text="Home" />
         <div className={`${styles.posts}`}>
           {items.map((item: Post) => (
-            <Link
-              key={item.title}
+            <NavbarLink
+              key={item.id}
               href={`/${item.slug}`}
-              className="has-text-weight-semibold has-text-white"
-            >
-              - {item.title}
-            </Link>
+              text={item.title}
+            />
           ))}
         </div>
       </div>
@@ -65,7 +53,7 @@ const CalculateColors = (isOpen: boolean) => {
 
 const NavbarClient = ({ posts }: { posts: Post[] }) => {
   const [isOpen, setOpen] = useState(false);
-  const {color, hamburger} = CalculateColors(isOpen);
+  const { color, hamburger } = CalculateColors(isOpen);
 
   /* useEffect hook to facilitate closing the menu whenever the
      window is resized */
@@ -81,11 +69,11 @@ const NavbarClient = ({ posts }: { posts: Post[] }) => {
 
   return (
     <nav className={`${color} px-3 flex justify-between items-center`}>
-      <IoLogoGameControllerB size = "40px" color = {hamburger}/>
+      <IoLogoGameControllerB size="40px" color={hamburger} />
       <div>
-        <Hamburger toggled={isOpen} toggle={setOpen} color={hamburger}/>
+        <Hamburger toggled={isOpen} toggle={setOpen} color={hamburger} />
       </div>
-      <BurgerMenu toggled={isOpen} items={posts}/>
+      <BurgerMenu toggled={isOpen} items={posts} />
     </nav>
   );
 };
