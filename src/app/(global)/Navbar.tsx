@@ -14,7 +14,7 @@ const Navbar = () => {
         Logo
       </div>
       <div>
-        Menu
+        <Hamburger toggled={isOpen} toggle={setOpen} />
       </div>
     </div>
   )
