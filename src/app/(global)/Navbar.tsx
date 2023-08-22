@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react'
 import Hamburger from "hamburger-react"
 // @ts-ignore
