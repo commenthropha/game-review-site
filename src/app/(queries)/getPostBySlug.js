@@ -11,6 +11,7 @@ const getPostBySlug = async (slug) => {
             title
             subheading
             id
+            author
             featuredImage {
               url
             }
