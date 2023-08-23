@@ -5,7 +5,9 @@ declare type Post = {
     author: string,
     updatedAt: string,
     updatedBy: string,
-    content: string,
+    content: {
+        raw: string
+    },
     title: string,
     subheading: string,
     featuredImage: {
