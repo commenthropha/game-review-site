@@ -14,6 +14,7 @@ const BurgerMenu = ({
   toggled: boolean;
   items: Post[];
 }) => (
+  // If the menu is toggled display the burger menu
   <>
     {toggled ? (
       <div className={styles.burgerMenu}>
@@ -33,17 +34,23 @@ const BurgerMenu = ({
   </>
 );
 
-const CalculateColors = (isOpen: boolean) => {
+const CalculateColors = (
+  isOpen: boolean // Used to determine if the navbar menu is open
+) => {
   // Initialise variables for allocation later
   let image, color, hamburger;
 
   // Get the current pathname (e.g. /sign-in, /dashboard)
   const pathname = usePathname();
 
+  // For the index page
   if (pathname === "/") {
     color = isOpen ? "bg-[#FFEEC4]" : "bg-[#400404]";
     hamburger = isOpen ? "#171520" : "#FFEEC4";
-  } else {
+  }
+
+  // For every other page
+  else {
     color = isOpen ? "bg-[#FFEEC4]" : "bg-[#171520]";
     hamburger = isOpen ? "#171520" : "#FFEEC4";
   }
@@ -51,7 +58,11 @@ const CalculateColors = (isOpen: boolean) => {
   return { image, color, hamburger };
 };
 
-const NavbarClient = ({ posts }: { posts: Post[] }) => {
+const NavbarClient = ({
+  posts, // The most recent posts to be displayed in the Navbar menu
+}: {
+  posts: Post[];
+}) => {
   const [isOpen, setOpen] = useState(false);
   const { color, hamburger } = CalculateColors(isOpen);
 
