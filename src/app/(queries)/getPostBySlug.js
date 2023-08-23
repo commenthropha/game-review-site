@@ -10,6 +10,9 @@ const getPostBySlug = async (slug) => {
           post(where: { slug: $slug }) {
             title
             subheading
+            content {
+              raw
+            }
             id
             author
             featuredImage {
