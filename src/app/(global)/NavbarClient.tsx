@@ -7,6 +7,9 @@ import { usePathname } from "next/navigation";
 import styles from "./styles/Navbar.module.css";
 import NavbarLink from "./NavbarLink";
 
+/* 
+ * Renders the Navbar menu when toggled
+ */
 const BurgerMenu = ({
   toggled, // Determines the current state of the menu
   items, // The items to be displayed in the menu
@@ -34,6 +37,9 @@ const BurgerMenu = ({
   </>
 );
 
+/* 
+ * Calculates colors for the Navbar to use
+ */
 const CalculateColors = (
   isOpen: boolean // Used to determine if the navbar menu is open
 ) => {
