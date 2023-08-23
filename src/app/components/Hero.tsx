@@ -8,11 +8,11 @@ const Hero = () => {
         id="hero"
         className={`min-h-[600px] md:min-h-[900px] ${styles.main}`}
       >
-        <div className="pl-[50px] sm:pl-[100px] pt-[150px] md:pt-[200px] md:pl-[150px] lg:pt-[225px] lg:pl-[200px] xl:pl-[300px]">
+        <div className="pl-[50px] sm:pl-[100px] pt-[150px] md:pl-[150px] lg:pl-[200px] xl:pl-[300px]">
           <h1
             className={`font-extrabold text-5xl sm:text-6xl md:text-7xl xl:text-8xl`}
           >
-            Your Games,
+            Your Favourite Games,
             <br /> Reviewed
           </h1>
         </div>
