@@ -17,7 +17,7 @@ const FeatureCard = ({ post }: { post: Post }) => {
               objectFit="cover" // Make the image fill the container
             />
         </div>
-          <div className= "text-left font-bold m-6 2xl:m-10 flex flex-col justify-between">
+          <div className= "font-bold m-6 2xl:m-10 flex flex-col justify-between">
             <div>
             <p className="text-red-800 tracking-tighter font-inconsolata text-sm md:text-md xl:text-lg">{moment(post.createdAt).format("MMM DD, YYYY")}</p>
             <h3 className="text-xl text-regal md:text-2xl xl:text-4xl">{post.title}</h3>
