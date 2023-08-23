@@ -1,4 +1,5 @@
 import { getPostBySlug, getPosts } from "../(queries)";
+import Content from "./components/Content"
 import Image from "next/image";
 import moment from "moment";
 
@@ -34,6 +35,9 @@ const Review = async ({ params }: { params: { slug: string } }) => {
       <div className="tracking-tighter font-inconsolata mt-2 flex flex-col md:flex-row justify-between md:w-4/5 mx-auto md:text-lg">
         <p>{moment(post.createdAt).format("MMM DD, YYYY")}</p>
         <p>Written by {post.author}</p>
+      </div>
+      <div className="md:w-4/5 mx-auto mt-6">
+        <Content content = {post.content.raw}/>
       </div>
     </div>
   );
