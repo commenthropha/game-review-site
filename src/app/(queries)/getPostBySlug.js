@@ -1,4 +1,4 @@
-const getPostById = async (id) => {
+const getPostBySlug = async (slug) => {
   const { data } = await fetch(process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT, {
     method: "POST",
     headers: {
@@ -6,21 +6,21 @@ const getPostById = async (id) => {
     },
     body: JSON.stringify({
       query: `
-          query getPostById($id: ID!) {
-            post(where: { id: $id }) {
-              title
-              subheading
-              id
-              featuredImage {
-                url
-              }
-              createdAt
-              slug
+        query getPostBySlug($slug: String!) {
+          post(where: { slug: $slug }) {
+            title
+            subheading
+            id
+            featuredImage {
+              url
             }
+            createdAt
+            slug
           }
-        `,
+        }
+      `,
       variables: {
-        id: id, // Pass the ID as a variable
+        slug: slug, // Pass the slug as a variable
       },
     }),
     next: { revalidate: 10 },
@@ -30,4 +30,4 @@ const getPostById = async (id) => {
   return post;
 };
 
-export default getPostById;
+export default getPostBySlug;
