@@ -1,3 +1,6 @@
+/*
+ * Retrieves a post based on the slug for use in the /[slug] route
+ */
 const getPostBySlug = async (slug) => {
   const { data } = await fetch(process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT, {
     method: "POST",
