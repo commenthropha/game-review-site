@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./styles/Hero.module.css";
 
+/*
+ * Hero to be displayed on the index page
+ */
 const Hero = () => {
   return (
     <div>
