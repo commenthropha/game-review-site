@@ -1,8 +1,11 @@
 import { getPostBySlug, getPosts } from "../(queries)";
-import Content from "./components/Content"
+import Content from "./components/Content";
 import Image from "next/image";
 import moment from "moment";
 
+/*
+ * Generate static routes for the posts at build time
+ */
 const generateStaticParams = async () => {
   const posts: Post[] = await getPosts();
 
@@ -37,7 +40,7 @@ const Review = async ({ params }: { params: { slug: string } }) => {
         <p>Written by {post.author}</p>
       </div>
       <div className="md:w-4/5 mx-auto mt-6">
-        <Content content = {post.content.raw}/>
+        <Content content={post.content.raw} />
       </div>
     </div>
   );
