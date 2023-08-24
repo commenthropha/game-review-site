@@ -1,6 +1,9 @@
 import getRecentPosts from "../(queries)/getRecentPosts";
 import Card from "./Card";
 
+/*
+ * Section to display a select number of the most recent reviews from the database
+ */
 const Reviews = async () => {
   const posts: Post[] = await getRecentPosts();
 
@@ -16,6 +19,8 @@ const Reviews = async () => {
         </span>
       </h1>
       <div className="flex flex-col lg:flex-row pb-20">
+        {/* Set the Card flex direction as reverse for every other card */}
+
         {posts?.map((post, i) => (
           <Card key={post.id} post={post} reverse={i % 2 === 0} />
         ))}
