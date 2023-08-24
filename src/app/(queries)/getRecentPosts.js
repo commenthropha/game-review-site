@@ -1,3 +1,6 @@
+/*
+ * Retrieves 4 of the most recent posts from Hygraph
+ */
 const getRecentPosts = async () => {
   // @ts-ignore
   const { data } = await fetch(process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT, {
@@ -23,8 +26,8 @@ const getRecentPosts = async () => {
     next: { revalidate: 10 },
   }).then((res) => res.json());
 
-  let posts = data?.posts
-  return posts;  
+  let posts = data?.posts;
+  return posts;
 };
 
 export default getRecentPosts;
