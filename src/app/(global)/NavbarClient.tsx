@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import styles from "./styles/Navbar.module.css";
 import NavbarLink from "./NavbarLink";
 
-/* 
+/*
  * Renders the Navbar menu when toggled
  */
 const BurgerMenu = ({
@@ -37,7 +37,7 @@ const BurgerMenu = ({
   </>
 );
 
-/* 
+/*
  * Calculates colors for the Navbar to use
  */
 const CalculateColors = (
