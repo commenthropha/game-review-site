@@ -6,8 +6,7 @@
 }
 
 .shadow {
-  -webkit-text-shadow:  3px 3px 30px #000000;
-  -moz-text-shadow:  3px 3px 30px #000000;
+  -webkit-text-shadow: 3px 3px 30px #000000;
+  -moz-text-shadow: 3px 3px 30px #000000;
   text-shadow: 3px 3px 30px #000000;
 }
-
