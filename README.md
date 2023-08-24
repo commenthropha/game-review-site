@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Event Ticket Website](logo.png)
 
-## Getting Started
+## Overview
+A game review publishing site built using a custom CMS
 
-First, run the development server:
+### Features
+- Hygraph content management
+- GraphQL API querying
+- Each review route is built statically to improve site speed
+- Fully responsive for mobile and tablet
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Libraries/Frameworks Used
+1. [React](https://react.dev/)
+2. [NextJS](https://nextjs.org/)
+3. [TailwindCSS](https://tailwindcss.com/)
+4. [GraphQL](https://graphql.org/)
+5. [Hygraph](https://hygraph.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### How To Run
+Visit the deployed website on [Vercel](https://game-review-site-eight.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# My Development Experience
+## The Problem
+I wanted to create a project that would allow me to experiment with using GraphQL as a querying language, while also exploring ways that a content management system might be created for ease of use by an end-user instad of using WordPress. Of course, this was amenable to any sort of informational site - creating a blog for this project would've also sufficed - however I decided to go with a game reviewing site for the simple fact that I felt there would be more creative liberty in the visual design of the website; this was useful as my front-end development skills involving TailwindCSS were also something that I was keen to improve throughout the course of this project.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Reflections
+### Things Learned
+Primarily, this project was intended to serve the purpose of allowing me to learn a new technology and it succeeded in doing so. What I found to be the main advantage of GraphQL over other API querying languages was the specifity of its queries which eliminated the problem of having a query return too much data and abstracting it on the front-end after the fact. Hygraph was also an amazingly capable content management solution; facilitating sourcing content from any backend system using their GraphQL API. Although its efficiency for more complex applications may be limited (once you start building applications that begin requiring relational data), for buliding a simple CMS I believe that using Hygraph with GraphQL is an amazingly capable backend stack for getting an efficient solution up and running with little to no hassle.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Improvements
