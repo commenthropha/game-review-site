@@ -1,10 +1,13 @@
 import React from "react";
-import { title } from "process";
 
+/*
+ * Data to be mapped and displayed within the about section
+ */
 const data: { title: string; content: string }[] = [
   {
     title: "Retro Games",
-    content: "Step back in time and join us on a nostalgic journey as we revisit the classic games that have shaped the gaming landscape. Our retro series of reviews brings you insights, memories, and critical perspectives on beloved vintage games that continue to hold a special place in our hearts.",
+    content:
+      "Step back in time and join us on a nostalgic journey as we revisit the classic games that have shaped the gaming landscape. Our retro series of reviews brings you insights, memories, and critical perspectives on beloved vintage games that continue to hold a special place in our hearts.",
   },
   {
     title: "Modern Releases",
@@ -18,6 +21,9 @@ const data: { title: string; content: string }[] = [
   },
 ];
 
+/*
+ * Section to display information about the website
+ */
 const About = () => {
   return (
     <div
@@ -32,11 +38,11 @@ const About = () => {
           video games, helping you make informed decisions about what to play
           next. Our aim is not just to share our own experiences, but to help
           you find the games that resonate with your preferences. With our team
-          of dedicated gamers and critics, we provide objective insights - highlighting both
-          strengths and weaknesses - so you can make the right choice based on
-          your tastes. Whether you're a casual gamer looking for a quick escape
-          or a hardcore enthusiast seeking your next gaming obsession, we're
-          here to assist you on your journey.
+          of dedicated gamers and critics, we provide objective insights -
+          highlighting both strengths and weaknesses - so you can make the right
+          choice based on your tastes. Whether you're a casual gamer looking for
+          a quick escape or a hardcore enthusiast seeking your next gaming
+          obsession, we're here to assist you on your journey.
         </p>
       </div>
       <div className="my-10 flex flex-col md:flex-row justify-between md:items-center">
