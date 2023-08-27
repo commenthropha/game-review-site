@@ -1,7 +1,7 @@
 ![Event Ticket Website](logo.png)
 
 ## Overview
-A game review publishing site built using a custom headless Content Management System
+A video game review publishing website built using a custom headless Content Management System
 
 ### Features
 - Hygraph content management
