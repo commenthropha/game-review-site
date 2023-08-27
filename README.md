@@ -16,7 +16,7 @@ A game review publishing site built using a custom CMS
 4. [GraphQL](https://graphql.org/)
 5. [Hygraph](https://hygraph.com/)
 
-### How To Run
+### Installation & Usage
 Visit the deployed website on [Vercel](https://game-review-site-eight.vercel.app/)
 
 # My Development Experience
