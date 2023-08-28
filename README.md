@@ -17,7 +17,7 @@ A video game review publishing website built using a custom headless Content Man
 5. [Hygraph](https://hygraph.com/)
 
 ### Installation & Usage
-Visit the deployed website on [Vercel](https://game-review-site-eight.vercel.app/)
+Visit the deployed website on [Vercel](https://press-start-site.vercel.app/)
 
 # My Development Experience
 ## The Problem
